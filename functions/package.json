@@ -1,0 +1,32 @@
+{
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start",
+    "serve:functions": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions:sendContato",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.2",
+    "axios": "^0.24.0",
+    "firebase": "^8.10.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.20.1",
+    "firebase-tools": "^11.20.0",
+    "mercadopago": "^1.5.12",
+    "node-xlsx": "^0.21.0",
+    "uid": "^2.0.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^3.8.0"
+  },
+  "private": true
+}

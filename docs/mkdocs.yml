@@ -1,0 +1,41 @@
+site_name: FiatLux
+repo_url: https://github.com/AlanCosta7/FiatLux
+repo_name: AlanCosta7/FiatLux
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: amber
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+markdown_extensions:
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.tilde
+  - admonition
+
+nav:
+  - FiatLux: 'index.md'
+  - Instalação: 'installation.md'
+  - Estrutura de diretórios: 'structure.md'
+  - CRUD: 'crud.md'
+  - Mercado Pago: mercadopago.md
+  - SendGrid: sendgrid.md
+  - Thumbnail: thumbnail.md

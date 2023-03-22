@@ -1,0 +1,55 @@
+{
+  "name": "nehc",
+  "version": "0.0.1",
+  "description": "Sinta esse som",
+  "productName": "NEHC",
+  "author": "Alan Costa <alanpc7@gmail.com>",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0",
+    "start": "quasar dev",
+    "start:ssr": "quasar dev -m ssr",
+    "build": "quasar build",
+    "build:pwa": "quasar build -m pwa",
+    "build:ssr": "quasar build -m ssr",
+    "hosting": "firebase deploy --only hosting",
+    "deploy": "firebase deploy --only functions:generateThumbnail"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.15.9",
+    "animejs": "^3.2.1",
+    "autoprefixer": "^9.8.8",
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "dotenv": "^16.0.0",
+    "firebase": "^9.15.0",
+    "pinia": "^2.0.28",
+    "postcss": "^7.0.39",
+    "quasar": "^2.11.3",
+    "uid": "^2.0.0",
+    "vue": "3",
+    "vue-i18n": "^9.0.0",
+    "vue-router": "4",
+    "vue3-draggable": "^2.0.9"
+  },
+  "devDependencies": {
+    "@quasar/app": "^3.3.3",
+    "workbox-webpack-plugin": "^6.0.0"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "engines": {
+    "node": ">= 12.22.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
